@@ -1,0 +1,89 @@
+ul {
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #2a2a2a;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+}
+header nav {
+  background-color: #023e8a;
+  min-height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header nav ul {
+  display: inline-block;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li + li {
+  padding-left: 15px;
+}
+header nav ul li a {
+  color: #ffffff;
+  padding: 15px;
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li a:hover {
+  background: #457b9d;
+}
+header nav ul li a.currentPage {
+  background: #457b9d;
+}
+
+.search {
+  display: inline-block;
+  margin-left: 15px;
+}
+.search input {
+  height: 28px;
+  padding: 7.5px;
+  border: none;
+  outline: 0;
+  border: 2px solid #ffffff;
+}
+.search input:focus {
+  border: 2px solid aqua;
+}
+
+.example-links ul li {
+  display: inline-block;
+  padding: 15px;
+}
+.example-links ul li:nth-of-type(1) a:hover {
+  color: #457b9d;
+  font-weight: bold;
+}
+.example-links ul li:nth-of-type(2) a:active {
+  color: red;
+  font-style: italic;
+}
+.example-links ul li:nth-of-type(3) a:visited {
+  color: yellow;
+}
+.example-links ul li input:focus {
+  color: green;
+  font-size: 20px;
+}
